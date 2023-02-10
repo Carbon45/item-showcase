@@ -1,0 +1,163 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 85rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* SHOWCASE  */
+.showcase {
+    position: relative;
+    height: 100vh;
+
+    /* BACKGROUND COLOR  */
+    background: linear-gradient(167deg, rgba(117,175,205,0.6867121848739496) 0%, rgba(0,46,93,0.9192051820728291) 100%);
+
+    display: flex;
+    align-items: center;
+    color: white;
+}   
+
+.showcase-left {
+    width: 60%;
+}
+
+.showcase-right {
+    width: 40%;
+}
+
+/* VIDEO  */
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* SHOWCASE LEFT  */
+.sc-title {
+    font-size: 3.7rem;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
+    margin-bottom: .35em;
+}
+
+.sc-body {
+    width: 70%;
+
+    margin-bottom: 2em;
+}
+
+.btn {
+    border: 2px solid white;
+    color: white;
+
+    padding: .75em 1.25em;
+    font-size: 1.25rem;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    border-radius: 100px;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    font-weight: bold;
+}
+
+/* SHOWCASE RIGHT  */
+.left-side, .middle, .right-side {
+    text-align: center;
+
+    transition: 1s;
+}
+
+.showcase-right img {
+    user-select: none;
+}
+
+.showcase-right h2 {
+    margin-bottom: .5em;
+}
+
+.left-side {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%) scale(50%);
+    right: 37rem;
+    z-index: 1;
+
+    opacity: 50%;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(85%);
+    right: 15%;
+    
+    z-index: 2;
+}
+
+.right-side {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%) scale(50%);
+    right: 0;
+
+    z-index: 1;
+    opacity: 50%;
+}
+
+/* ARROWS  */
+.arrow-wrap {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    margin-top: 13em;
+
+    font-size: 3rem;
+
+    z-index: 5;
+    user-select: none;
+}
+
+.left-arrow {
+    margin-right: 1em;
+}
+
+.arrow {
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.arrow:hover {
+    color: rgba(255, 255, 255, 0.599);
+}
